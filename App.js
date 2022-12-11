@@ -177,6 +177,7 @@ export default function App() {
         <ScrollView horizontal style={{ marginVertical: 8 }}>
           {
             SkillIcons.map(skill => <View
+              key={skill}
               style={{
                 width: 48,
                 height: 48,
@@ -307,6 +308,7 @@ export default function App() {
         <ScrollView horizontal style={{ marginVertical: 8 }}>
           {
             FindMeOn.map(res => <View
+              key={res.name}
               style={{
                 width: 48,
                 height: 48,
